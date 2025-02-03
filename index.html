@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search for any movie and get detailed information instantly.">
+  <title>Movie Finder</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>🎥 Movie Finder 🎬</h1>
+    <p>Find detailed information about any movie you love!</p>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input id="input" type="text" placeholder="Enter movie name..." />
+      <button onclick="search()" class="btn-style">🔍 Search</button>
+    </div>
+
+    <div id="movie-details" class="movie-details hidden">
+      <img id="poster" alt="Movie Poster" />
+      <h2 id="Title"></h2>
+      <p id="Plot"></p>
+
+      <div class="details-grid">
+        <p id="Year"></p>
+        <p id="Genre"></p>
+        <p id="Director"></p>
+        <p id="Actors"></p>
+        <p id="Rated"></p>
+        <p id="Runtime"></p>
+        <p id="Language"></p>
+        <p id="Country"></p>
+        <p id="Awards"></p>
+        <p id="imdbRating"></p>
+        <p id="imdbVotes"></p>
+      </div>
+    </div>
+
+    <p id="error-message" class="hidden">Movie not found. Please try another title.</p>
+  </main>
+
+  <footer>
+    <p>Powered by <a href="https://www.omdbapi.com/" target="_blank">eSOLUTION Group</a></p>
+  </footer>
+</body>
+
+</html>
